@@ -7,18 +7,29 @@ import StorefrontIcon from "@mui/icons-material/Storefront";
 import GroupsOutlinedIcon from "@mui/icons-material/GroupsOutlined";
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
 import Avatar from "@mui/material/Avatar";
+import Box from '@mui/material/Box';
+import Tab from '@mui/material/Tab';
+import TabContext from '@mui/lab/TabContext';
+import TabList from '@mui/lab/TabList';
+import TabPanel from '@mui/lab/TabPanel';
+import { Icon } from "@mui/material";
 
-function Icons() {
-  //const [isMouseOver, setMouseOver] = useState(false);
-
-  // function handleMouseOver() {
-  //   setMouseOver(true);
-  // }
-  // function handleMouseOut() {
-  //   setMouseOver(false);
-  // }
+function icon() {
+  
 
   return (
+    <Box sx={{ width: '100%', typography: 'body1' }}>
+    <TabContext value={value}>
+    <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+    <TabList onChange={handleChange} aria-label="lab API tabs example">
+            <Tab label="Item One" value="1" />
+            <Tab label="Item Two" value="2" />
+            <Tab label="Item Three" value="3" />
+          </TabList>
+        </Box>
+        <TabPanel value="1">Item One</TabPanel>
+        <TabPanel value="2">Item Two</TabPanel>
+        <TabPanel value="3">Item Three</TabPanel>
     <icon>
       <table cellSpacing="5px">
         <tr>
@@ -125,7 +136,9 @@ function Icons() {
         </tr>
       </table>
     </icon>
+    </TabContext>
+    </Box>
   );
 }
 
-export default Icons;
+export default Icon;

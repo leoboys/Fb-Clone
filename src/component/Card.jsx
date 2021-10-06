@@ -11,7 +11,7 @@ function Card(props) {
           sx={{
             width: 30,
             height: 30,
-            marginBottom: "60px",
+            marginBottom: "100px",
             color: "primary.transperent",
             "&:hover": {
               color: "primary.dark",
