@@ -38,10 +38,10 @@ export default function Post() {
         component="img"
         height="370"
         image="https://bit.ly/2WQQWFi"
-        alt="Paella dish"
+        alt="Good morning"
       />
  
-      <CardActions disableSpacing>
+      <CardActions >
         <IconButton aria-label="add to favorites" >
           <FavoriteIcon  />
         </IconButton>

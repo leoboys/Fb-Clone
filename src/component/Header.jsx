@@ -16,7 +16,7 @@ function Header() {
         <AppBar>
           <Toolbar>
             <Grid container spacing={3}>
-              <Grid item xs={4.5}>
+              <Grid item xs={3.2}>
                 <FacebookIcon className="fb" sx={{ width: 50, height: 50 }} />
               </Grid>
               <Grid item xs={6}>

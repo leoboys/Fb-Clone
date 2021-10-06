@@ -21,10 +21,10 @@ function Feed() {
             height: 350,
           }}
         >
-          <Story sx={{ marginTop: "80px" }} />
+          <Story sx={{ marginTop: "100px" }} />
         </Box>
         <Container fixed sx={{
-          width: 450,
+          width: 500,
           height: 70,
             textAlign: "center",
             background: "white",
