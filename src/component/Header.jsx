@@ -11,7 +11,7 @@ import { Grid } from "@mui/material";
 
 function Header() {
   return (
-    <header>
+    <header> 
       <Box sx={{ flexGrow: 1 }}>
         <AppBar>
           <Toolbar>
